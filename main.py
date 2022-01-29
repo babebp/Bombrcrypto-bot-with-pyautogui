@@ -7,6 +7,7 @@ from datetime import datetime
 from modules.find_monitor import finding_monitor
 from modules.start_treasure_mode import start_treasure
 from modules.count_down import counting_down
+from modules.rest_all import rest_all
 
 
 print('--------------------------------------')
@@ -32,6 +33,7 @@ for i in range(len(monitor)):
     time.sleep(1800)
 
     #Start Resting
+    rest_all.rest()
 
 
 
