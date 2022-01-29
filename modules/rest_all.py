@@ -1,8 +1,8 @@
 import pyautogui
 import time
 
-class start_treasure():
-    def start():
+class rest_all():
+    def rest():
         print('Status : Resting')
         pyautogui.click(953, 707) # Arrow Up
         time.sleep(2)
