@@ -1,7 +1,6 @@
 import pyautogui
 import time
 
-from datetime import datetime
 from find_monitor import finding_monitor
 
 class rest_all():
@@ -23,7 +22,4 @@ class rest_all():
             time.sleep(1)
             pyautogui.click(516, 161) # Back to main menu
             time.sleep(1)
-            
-
             monitor[i].restore()
-            
