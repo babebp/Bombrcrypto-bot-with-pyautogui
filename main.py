@@ -23,15 +23,7 @@ print(f'Process : Detected {len(monitor)} Bombcrypto')
 
 while True:
     # Start Playing Each Monitor
-    for i in range(len(monitor)):
-        monitor[i].minimize()
-        monitor[i].maximize()
-
-        # Start Playing
-        now = datetime.now().strftime('%H:%M:%S')
-        print(f'Process : Start Treasure Mode at {now}')
-        start_treasure.start()
-        monitor[i].restore()
+    start_treasure.start()
 
     # Re-map
     print('Process : Remap')
