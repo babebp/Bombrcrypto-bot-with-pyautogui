@@ -2,10 +2,10 @@ import pyautogui
 import time
 
 from datetime import datetime
-from find_monitor import finding_monitor
+
 class start_treasure():
     def start():
-        monitor = finding_monitor.find_monitor()
+        monitor = pyautogui.getWindowsWithTitle("Bombcrypto - Google Chrome")
         for i in range(len(monitor)):
             monitor[i].minimize()
             monitor[i].maximize()

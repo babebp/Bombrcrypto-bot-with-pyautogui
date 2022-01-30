@@ -1,23 +1,24 @@
-import pyautogui
-import datetime
 import time
-from datetime import datetime
+import pyautogui
+from colorama import Fore
 
 
-from modules.find_monitor import finding_monitor
 from modules.start_treasure_mode import start_treasure
 from modules.count_down import counting_down
 from modules.rest_all import rest_all
 from modules.re_map import reset_map
 
 
-print('--------------------------------------')
+print(Fore.GREEN + '--------------------------------------')
 print('------> Bombcrypto BOT BY BABE <------')
 print('--------------------------------------')
 print('>> Start BOT NOW <<')
 print('Process : Detecting Bombcrypto Monitor...')
 
-monitor = finding_monitor.find_monitor()
+monitor = pyautogui.getWindowsWithTitle("Bombcrypto - Google Chrome")
+if len(monitor) == 0 :
+    print(Fore.RED + 'You must restart this program again')
+    exit()
 time.sleep(2)
 print(f'Process : Detected {len(monitor)} Bombcrypto')
 

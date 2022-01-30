@@ -1,11 +1,11 @@
 import pyautogui
 import time
 
-from find_monitor import finding_monitor
+
 
 class rest_all():
     def rest():
-        monitor = finding_monitor.find_monitor()
+        monitor = pyautogui.getWindowsWithTitle("Bombcrypto - Google Chrome")
         for i in range(len(monitor)):
             monitor[i].minimize()
             monitor[i].maximize()

@@ -1,12 +1,12 @@
 import time
 import pyautogui
 
-from find_monitor import finding_monitor
+
 
 class reset_map():
     def re_map():
         for j in range(10):
-            monitor = finding_monitor.find_monitor()
+            monitor = pyautogui.getWindowsWithTitle("Bombcrypto - Google Chrome")
             for i in range(len(monitor)):
                 monitor[i].minimize()
                 monitor[i].maximize()
